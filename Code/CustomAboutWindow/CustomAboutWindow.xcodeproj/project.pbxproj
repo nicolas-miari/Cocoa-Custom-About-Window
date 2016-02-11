@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		378DB5AA1C6C92180013387F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DB5A91C6C92180013387F /* AppDelegate.m */; };
+		378DB5AD1C6C92180013387F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DB5AC1C6C92180013387F /* main.m */; };
+		378DB5AF1C6C92180013387F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 378DB5AE1C6C92180013387F /* Assets.xcassets */; };
+		378DB5B21C6C92180013387F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DB5B01C6C92180013387F /* MainMenu.xib */; };
+		378DB5BD1C6C928F0013387F /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378DB5BA1C6C928F0013387F /* AboutWindow.xib */; };
+		378DB5BE1C6C928F0013387F /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378DB5BC1C6C928F0013387F /* AboutWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		378DB5A51C6C92180013387F /* CustomAboutWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAboutWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		378DB5A81C6C92180013387F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		378DB5A91C6C92180013387F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		378DB5AC1C6C92180013387F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		378DB5AE1C6C92180013387F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		378DB5B11C6C92180013387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		378DB5B31C6C92180013387F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		378DB5BA1C6C928F0013387F /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		378DB5BB1C6C928F0013387F /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
+		378DB5BC1C6C928F0013387F /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		378DB5A21C6C92180013387F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		378DB59C1C6C92180013387F = {
+			isa = PBXGroup;
+			children = (
+				378DB5A71C6C92180013387F /* CustomAboutWindow */,
+				378DB5A61C6C92180013387F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		378DB5A61C6C92180013387F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				378DB5A51C6C92180013387F /* CustomAboutWindow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		378DB5A71C6C92180013387F /* CustomAboutWindow */ = {
+			isa = PBXGroup;
+			children = (
+				378DB5A81C6C92180013387F /* AppDelegate.h */,
+				378DB5A91C6C92180013387F /* AppDelegate.m */,
+				378DB5B91C6C928F0013387F /* About */,
+				378DB5AE1C6C92180013387F /* Assets.xcassets */,
+				378DB5B01C6C92180013387F /* MainMenu.xib */,
+				378DB5B31C6C92180013387F /* Info.plist */,
+				378DB5AB1C6C92180013387F /* Supporting Files */,
+			);
+			path = CustomAboutWindow;
+			sourceTree = "<group>";
+		};
+		378DB5AB1C6C92180013387F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				378DB5AC1C6C92180013387F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		378DB5B91C6C928F0013387F /* About */ = {
+			isa = PBXGroup;
+			children = (
+				378DB5BA1C6C928F0013387F /* AboutWindow.xib */,
+				378DB5BB1C6C928F0013387F /* AboutWindowController.h */,
+				378DB5BC1C6C928F0013387F /* AboutWindowController.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		378DB5A41C6C92180013387F /* CustomAboutWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378DB5B61C6C92180013387F /* Build configuration list for PBXNativeTarget "CustomAboutWindow" */;
+			buildPhases = (
+				378DB5A11C6C92180013387F /* Sources */,
+				378DB5A21C6C92180013387F /* Frameworks */,
+				378DB5A31C6C92180013387F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomAboutWindow;
+			productName = CustomAboutWindow;
+			productReference = 378DB5A51C6C92180013387F /* CustomAboutWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		378DB59D1C6C92180013387F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Nicolás Fernando Miari";
+				TargetAttributes = {
+					378DB5A41C6C92180013387F = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 378DB5A01C6C92180013387F /* Build configuration list for PBXProject "CustomAboutWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 378DB59C1C6C92180013387F;
+			productRefGroup = 378DB5A61C6C92180013387F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				378DB5A41C6C92180013387F /* CustomAboutWindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		378DB5A31C6C92180013387F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378DB5AF1C6C92180013387F /* Assets.xcassets in Resources */,
+				378DB5B21C6C92180013387F /* MainMenu.xib in Resources */,
+				378DB5BD1C6C928F0013387F /* AboutWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		378DB5A11C6C92180013387F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378DB5AD1C6C92180013387F /* main.m in Sources */,
+				378DB5AA1C6C92180013387F /* AppDelegate.m in Sources */,
+				378DB5BE1C6C928F0013387F /* AboutWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		378DB5B01C6C92180013387F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				378DB5B11C6C92180013387F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		378DB5B41C6C92180013387F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		378DB5B51C6C92180013387F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		378DB5B71C6C92180013387F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomAboutWindow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.CustomAboutWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		378DB5B81C6C92180013387F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CustomAboutWindow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.CustomAboutWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		378DB5A01C6C92180013387F /* Build configuration list for PBXProject "CustomAboutWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378DB5B41C6C92180013387F /* Debug */,
+				378DB5B51C6C92180013387F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378DB5B61C6C92180013387F /* Build configuration list for PBXNativeTarget "CustomAboutWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				378DB5B71C6C92180013387F /* Debug */,
+				378DB5B81C6C92180013387F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 378DB59D1C6C92180013387F /* Project object */;
+}

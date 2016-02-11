@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AboutWindowController">
+            <connections>
+                <outlet property="appCopyrightLabel" destination="XHb-Gy-MPa" id="QeL-kD-xhM"/>
+                <outlet property="appIconImageView" destination="Yrc-4l-2hS" id="3py-UT-w92"/>
+                <outlet property="appNameLabel" destination="mNY-9q-q1n" id="nJa-xU-wlV"/>
+                <outlet property="appVersionLabel" destination="vJX-A1-MCp" id="hQU-sK-P2B"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="Dk9-Qr-e6p"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="256" height="192"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="192"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mNY-9q-q1n">
+                        <rect key="frame" x="18" y="62" width="220" height="18"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="App Name" id="FEe-M3-eMj">
+                            <font key="font" metaFont="systemBold" size="14"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XHb-Gy-MPa">
+                        <rect key="frame" x="18" y="20" width="220" height="13"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Copyright" id="8Ie-px-QNH">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vJX-A1-MCp">
+                        <rect key="frame" x="18" y="41" width="220" height="13"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="version" id="h8L-DG-8Eh">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yrc-4l-2hS">
+                        <rect key="frame" x="86" y="88" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="unx-7Q-FFX"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="t15-qp-rUn"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vJX-A1-MCp" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="6FW-mi-XdM"/>
+                    <constraint firstItem="XHb-Gy-MPa" firstAttribute="top" secondItem="vJX-A1-MCp" secondAttribute="bottom" constant="8" id="Adz-nL-frZ"/>
+                    <constraint firstItem="XHb-Gy-MPa" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="CIH-Ks-Vmo"/>
+                    <constraint firstItem="Yrc-4l-2hS" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="TBb-Mz-wRj"/>
+                    <constraint firstAttribute="trailing" secondItem="mNY-9q-q1n" secondAttribute="trailing" constant="20" id="VV7-ni-VrT"/>
+                    <constraint firstItem="Yrc-4l-2hS" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="YQc-rD-Tjl"/>
+                    <constraint firstItem="vJX-A1-MCp" firstAttribute="top" secondItem="mNY-9q-q1n" secondAttribute="bottom" constant="8" id="hyr-eb-fkU"/>
+                    <constraint firstAttribute="trailing" secondItem="XHb-Gy-MPa" secondAttribute="trailing" constant="20" id="oha-ce-NwG"/>
+                    <constraint firstAttribute="bottom" secondItem="XHb-Gy-MPa" secondAttribute="bottom" constant="20" id="pjk-pr-ssx"/>
+                    <constraint firstAttribute="trailing" secondItem="vJX-A1-MCp" secondAttribute="trailing" constant="20" id="q7T-bt-QNl"/>
+                    <constraint firstItem="mNY-9q-q1n" firstAttribute="top" secondItem="Yrc-4l-2hS" secondAttribute="bottom" constant="8" id="sFl-a2-BuJ"/>
+                    <constraint firstItem="mNY-9q-q1n" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="sax-wg-FOu"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="128" y="279"/>
+        </window>
+    </objects>
+</document>
