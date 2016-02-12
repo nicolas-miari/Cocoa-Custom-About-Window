@@ -25,7 +25,7 @@ the default _About..._ window pick that up at runtime.
 This project demonstrates how to use a custom window controller and present that instead.
 It reads from `Info.plist` all the same keys that the default _About..._ window shows.
 But in contrast with the default windwo,because you have access to the window controller's source 
-code, you can customize its appearance, add extra labels, etc. In this demo, I have change the
+code, you can customize its appearance, add extra labels, etc. In this demo, I have changed the
 appearance of the window to "Vibrant Dark", much like e.g., the [Pixelmator](http://www.pixelmator.com) app.
 
 
