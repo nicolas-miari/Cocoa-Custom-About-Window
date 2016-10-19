@@ -28,4 +28,50 @@ have access to the window controller's source code); e.g. add extra labels, etc.
 In this demo, I have changed the appearance of the window to "Vibrant Dark", much 
 like e.g., the [Pixelmator](http://www.pixelmator.com) app.
 
+###How to use it in your projects
+
+1. Copy the following files into your project:
+
+    - AboutWindowController.h
+    - AboutWindowController.m
+    - AboutWindow.xib
+
+    (If you wish to further customize the information displayed in the About 
+    window, Add extra subviews to the xib and define the corresponding outlets 
+    in the window controller class. You will need to configure those views with
+    whatever information you wish to display, inside the method `-windowDidLoad`)
+
+2. Go to your project's AppDelegate implementation file and add this line near the top:
+
+        #import "AboutWindowController.h"
+
+3. Still in the AppDelegate implementation file, add the following method:
+
+        - (IBAction) about:(id)sender {
+        // Show the window:
+        [[AboutWindowController defaultController].window orderFront:self];
+        }
+
+4. Go to the xib file that contains your app's main menu (by default named "MainMenu.xib")
+
+5. Select the "About..." menu item.
+
+6. In the Connections Inspector (section: "Sent Actions"), remove the action that 
+is set by default (`orderFrontStandardAboutPanelWithOptions:`).
+
+7. Control-drag from the (now empty) action slot all the way to the xib file's 
+"First Responder" placeholder, and in the list that pops up, choose the action 
+named `about:` (this is the method that you defined in step 3).
+
+8. Build and run.
+
+    
+
+
+
+
+
+
+
+
 
