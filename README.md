@@ -2,8 +2,7 @@
 
 Demonstrates how to customize the standard "About <app name>..." window for Cocoa applications.
 
-![Screenshot of the demo project](Img/Capture.png?raw=true "Screenshot of the demo project")
-
+<img src="./Img/Capture@2x.png" width="585" height="483" alt="Screenshot of the demo project" />
 
 ###Background
 
