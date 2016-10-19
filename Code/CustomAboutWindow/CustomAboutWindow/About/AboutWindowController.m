@@ -2,7 +2,7 @@
 //  AboutWindowController.m
 //  Tile Map Editor
 //
-//  Created by Nicolás Fernando Miari on 2016/02/11.
+//  Created by Nicolás Miari on 2016/02/11.
 //  Copyright © 2016 Nicolás Miari. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,18 +27,13 @@
 
 
 @implementation AboutWindowController
-{
-    // (nothing yet...)
-}
-
-// .............................................................................
 
 // Singleton, because...
-+ (instancetype) defaultController
-{
-    static id staticInstance = nil;
++ (instancetype) defaultController {
     
+    static id staticInstance = nil;
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
         staticInstance = [[self alloc] init];
     });
@@ -47,28 +42,19 @@
 }
 
 
-// .............................................................................
-
 #pragma mark - Initialization
 
-- (instancetype) init
-{
-    // Pick the right xib, and own the window:
-    if (self = [super initWithWindowNibName:@"AboutWindow" owner:self]){
-        // (nothing yet...)
-    }
-    
-    return self;
+
+- (instancetype) init {
+    return [super initWithWindowNibName:@"AboutWindow" owner:self];
 }
 
-
-// .............................................................................
 
 #pragma mark - NSWindowController
 
 
-- (void) windowDidLoad
-{
+- (void) windowDidLoad {
+    
     [super windowDidLoad];
     
     // (window has loaded; all subview outlets are initialized...)
@@ -76,6 +62,8 @@
     
     // 1. Customize the window's overall appearance:
     
+    // In this example, we are making the window 'dark' (like e.g.
+    // Pixelmator.app):
     self.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
     
     
@@ -92,6 +80,10 @@
     self.appNameLabel.stringValue      = [infoDictionary objectForKey:@"CFBundleName"];
     self.appVersionLabel.stringValue   = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
     self.appCopyrightLabel.stringValue = [infoDictionary objectForKey:@"NSHumanReadableCopyright"];
+
+    
+    // If you add more custom subviews to display additional information about
+    // your app, configure them here
 }
 
 @end

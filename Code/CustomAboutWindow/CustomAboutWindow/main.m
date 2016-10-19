@@ -2,8 +2,8 @@
 //  main.m
 //  CustomAboutWindow
 //
-//  Created by Nicolás Fernando Miari on 2016/02/11.
-//  Copyright © 2016 Nicolás Fernando Miari. All rights reserved.
+//  Created by Nicolás Miari on 2016/02/11.
+//  Copyright © 2016 Nicolás Miari. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to

@@ -2,7 +2,7 @@
 //  AboutWindowController.h
 //  Tile Map Editor
 //
-//  Created by Nicolás Fernando Miari on 2016/02/11.
+//  Created by Nicolás Miari on 2016/02/11.
 //  Copyright © 2016 Nicolás Miari. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,7 +27,16 @@
 
 @interface AboutWindowController : NSWindowController
 
+/**
+ Implemented as singleton, so the object triggering the display of the
+ "About..." window does not need to keep a strong reference to the view
+ controller (to prevent its premature deallocation).
+ The action method to display the "About..." window can just send an
+ `orderFront:` message to this singleton window controller's window, and return
+ right away.
+ */
 + (instancetype) defaultController;
+
 
 /** 
  Displays app name (obtained from Info.plist key "CFBundleName")
@@ -36,13 +45,15 @@
 
 
 /** 
- Displays app version string (obtained from Info.plist key "CFBundleShortVersionString")
+ Displays app version string (obtained from Info.plist key 
+ "CFBundleShortVersionString")
  */
 @property (weak) IBOutlet NSTextField *appVersionLabel;
 
 
 /**
- Displays copyright notice (obtained from Info.plist key "NSHumanReadableCopyright")
+ Displays copyright notice (obtained from Info.plist key 
+ "NSHumanReadableCopyright")
  */
 @property (weak) IBOutlet NSTextField *appCopyrightLabel;
 

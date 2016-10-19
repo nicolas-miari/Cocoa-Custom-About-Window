@@ -20,9 +20,9 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="CustomAboutWindow" id="1Xt-HY-uBw">
+                <menuItem title="Custom About Window" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="CustomAboutWindow" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="Custom About Window" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
                             <menuItem title="About CustomAboutWindow" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -667,14 +667,37 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="CustomAboutWindow" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Custom About Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="476" y="258" width="480" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vpT-ls-FXE">
+                        <rect key="frame" x="152" y="178" width="177" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="The app itself does nothing. " id="nPu-Os-sar">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GSS-jr-vD3">
+                        <rect key="frame" x="52" y="153" width="378" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Go to &quot;About Custom About Window&quot; in the application menu." id="kJF-w4-ELp">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vpT-ls-FXE" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="0bu-RW-Fou"/>
+                    <constraint firstItem="GSS-jr-vD3" firstAttribute="centerX" secondItem="vpT-ls-FXE" secondAttribute="centerX" id="GsW-2M-Dwz"/>
+                    <constraint firstItem="GSS-jr-vD3" firstAttribute="top" secondItem="vpT-ls-FXE" secondAttribute="bottom" constant="8" id="RNh-dc-eeH"/>
+                    <constraint firstItem="vpT-ls-FXE" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" constant="-6.5" id="mtk-0E-F0Q"/>
+                </constraints>
             </view>
         </window>
     </objects>

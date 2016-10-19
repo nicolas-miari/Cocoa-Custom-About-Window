@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		378DB5A51C6C92180013387F /* CustomAboutWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAboutWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		378DB5A51C6C92180013387F /* Custom About Window.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom About Window.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		378DB5A81C6C92180013387F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		378DB5A91C6C92180013387F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		378DB5AC1C6C92180013387F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		378DB5A61C6C92180013387F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				378DB5A51C6C92180013387F /* CustomAboutWindow.app */,
+				378DB5A51C6C92180013387F /* Custom About Window.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,9 +80,9 @@
 		378DB5B91C6C928F0013387F /* About */ = {
 			isa = PBXGroup;
 			children = (
-				378DB5BA1C6C928F0013387F /* AboutWindow.xib */,
 				378DB5BB1C6C928F0013387F /* AboutWindowController.h */,
 				378DB5BC1C6C928F0013387F /* AboutWindowController.m */,
+				378DB5BA1C6C928F0013387F /* AboutWindow.xib */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -90,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		378DB5A41C6C92180013387F /* CustomAboutWindow */ = {
+		378DB5A41C6C92180013387F /* Custom About Window */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 378DB5B61C6C92180013387F /* Build configuration list for PBXNativeTarget "CustomAboutWindow" */;
+			buildConfigurationList = 378DB5B61C6C92180013387F /* Build configuration list for PBXNativeTarget "Custom About Window" */;
 			buildPhases = (
 				378DB5A11C6C92180013387F /* Sources */,
 				378DB5A21C6C92180013387F /* Frameworks */,
@@ -102,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = CustomAboutWindow;
+			name = "Custom About Window";
 			productName = CustomAboutWindow;
-			productReference = 378DB5A51C6C92180013387F /* CustomAboutWindow.app */;
+			productReference = 378DB5A51C6C92180013387F /* Custom About Window.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				378DB5A41C6C92180013387F /* CustomAboutWindow */,
+				378DB5A41C6C92180013387F /* Custom About Window */,
 			);
 		};
 /* End PBXProject section */
@@ -292,13 +292,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		378DB5B61C6C92180013387F /* Build configuration list for PBXNativeTarget "CustomAboutWindow" */ = {
+		378DB5B61C6C92180013387F /* Build configuration list for PBXNativeTarget "Custom About Window" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				378DB5B71C6C92180013387F /* Debug */,
 				378DB5B81C6C92180013387F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
