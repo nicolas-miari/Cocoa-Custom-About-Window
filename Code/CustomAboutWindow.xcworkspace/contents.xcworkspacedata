@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CustomAboutWindow_Obj-C/CustomAboutWindow_Obj-C.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/n-miari/Projects/Personal/Cocoa-Custom-About-Window/Code/CustomAboutWindow_Swift/CustomAboutWindow_Swift.xcodeproj">
+   </FileRef>
+</Workspace>
